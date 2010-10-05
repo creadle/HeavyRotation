@@ -7,6 +7,7 @@
 //
 
 #import "HeavyRotationAppDelegate.h"
+#import "HeavyViewController.h"
 
 @implementation HeavyRotationAppDelegate
 
@@ -21,11 +22,19 @@
     // Override point for customization after application launch.
 	UIDevice *device = [UIDevice currentDevice];
 	[device beginGeneratingDeviceOrientationNotifications];
+	[device setProximityMonitoringEnabled:YES];
 	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 	[nc addObserver:self
 		   selector:@selector(orientationChanged:)
 			   name:UIDeviceOrientationDidChangeNotification
 			 object:device];
+	[nc addObserver:self
+		   selector:@selector(proximityStateChanged:)
+			   name:UIDeviceProximityStateDidChangeNotification
+			 object:device];
+	
+	HeavyViewController *hvc = [[HeavyViewController alloc] init];
+	[window addSubview:[hvc view]];
     
     [window makeKeyAndVisible];
     
@@ -35,6 +44,11 @@
 - (void)orientationChanged:(NSNotification *)note
 {
 	NSLog(@"Orientation changed: %d", [[note object] orientation]);
+}
+
+- (void)proximityStateChanged:(NSNotification *)note
+{
+	NSLog(@"Proximity state changed: %d", [[note object] proximityState]);
 }
 
 

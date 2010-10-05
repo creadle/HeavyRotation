@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>HeavyViewController.nib</key>
+		<data>
+		PffQ+pldDW9dLBfwO5+dvhA/wJA=
+		</data>
 		<key>MainWindow.nib</key>
 		<data>
 		rBOYSO7Yq5SJ8ktTipP8+QMzWRw=
@@ -15,6 +19,10 @@
 		<key>embedded.mobileprovision</key>
 		<data>
 		ICXZmhE4knLmz4Kw6IJWXcW8mSc=
+		</data>
+		<key>joeeye.jpg</key>
+		<data>
+		L/YSezjtWOVPq6GC9tN0n05SBjI=
 		</data>
 	</dict>
 	<key>rules</key>

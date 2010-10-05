@@ -1,18 +1,22 @@
 THeavyRotation
 v7
 r0
-t307920813.332473
+t308003195.984709
 cCheck dependencies
 cCpResource build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 cProcessInfoPlistFile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist" HeavyRotation-Info.plist
 cCompileXIB "/Volumes/USB DISK/source/HeavyRotation/MainWindow.xib"
+cCompileXIB "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib"
+cCpResource build/Debug-iphoneos/HeavyRotation.app/joeeye.jpg "../Solutions/09. HeavyRotation/joeeye.jpg"
 cProcessPCH /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-elupqswuyjiaqmdbwztqqfygaieu/HeavyRotation_Prefix.pch.gch HeavyRotation_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
 cProcessPCH /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch.gch HeavyRotation_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/main.o "/Volumes/USB DISK/source/HeavyRotation/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyViewController.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/main.o "/Volumes/USB DISK/source/HeavyRotation/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation" normal armv6
 cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation" normal armv6
+cCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyViewController.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cLd "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation" normal armv7
 cCreateUniversalBinary "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation" normal "armv6 armv7"
 cGenerateDSYMFile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM" "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation"
@@ -66,6 +70,11 @@ c000000004CA5FAF50000000000001C11
 t1285946101
 s7185
 
+N/Volumes/USB DISK/source/HeavyRotation/../Solutions/09. HeavyRotation/joeeye.jpg
+c000000004A71D15A0000000000006AC4
+t1248973146
+s27332
+
 N/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.h
 c000000004CAA47300000000000000171
 t1286227760
@@ -73,10 +82,28 @@ s369
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m
-c000000004CAA48260000000000000BA5
-t1286228006
-s2981
+c000000004CAB89B80000000000000D68
+t1286310328
+s3432
 i"HeavyRotationAppDelegate.h"
+i"HeavyViewController.h"
+
+N/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.h
+c000000004CAB66340000000000000108
+t1286301236
+s264
+i<UIKit/UIKit.h>
+
+N/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m
+c000000004CAB887400000000000005FC
+t1286310004
+s1532
+i"HeavyViewController.h"
+
+N/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib
+c000000004CAB68BA0000000000005604
+t1286301882
+s22020
 
 N/Volumes/USB DISK/source/HeavyRotation/HeavyRotation_Prefix.pch
 c000000004CAA473200000000000000C3
@@ -91,27 +118,31 @@ t1286227762
 s8486
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app
-t1286228012
+t1286310394
 s32768
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM
-t1286228012
+t1286310394
 s32768
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation
-t1286228012
-s50912
+t1286310394
+s42408
+
+N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyViewController.nib
+t1286310392
+s3427
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist
-t1286228010
-s750
+t1286310392
+s814
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/MainWindow.nib
 t1286228010
 s1537
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/PkgInfo
-t1286228010
+t1286310392
 s8
 
 N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist
@@ -122,39 +153,51 @@ N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/e
 t1286228012
 s7185
 
+N/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/joeeye.jpg
+t1286310392
+s27332
+
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent
-t1286228012
+t1286310394
 s432
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation
-t1286228012
-s16340
+t1286310394
+s17832
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation.LinkFileList
-c000000004CAA482A0000000000000114
-t1286228010
-s276
+c000000004CAB89F800000000000001A3
+t1286310392
+s419
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o
-t1286228012
-s48900
+t1286310394
+s50396
+
+N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyViewController.o
+t1286310394
+s35048
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/main.o
 t1286228012
 s6448
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation
-t1286228012
-s16340
+t1286310394
+s17832
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation.LinkFileList
-c000000004CAA482A0000000000000114
-t1286228010
-s276
+c000000004CAB89F800000000000001A3
+t1286310392
+s419
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o
-t1286228012
-s48820
+t1286310394
+s50292
+
+N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyViewController.o
+t1286310394
+s35016
 
 N/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/main.o
 t1286228012
@@ -175,25 +218,25 @@ t1286228012
 s9831984
 
 NHeavyRotation-Info.plist
-c000000004CAA4732000000000000038D
-t1286227762
-s909
+c000000004CAB887E00000000000003E1
+t1286310014
+s993
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307920808#307920810#0(0"0(0#1#0"32651513917735028#0"0#
+lSLF07#2@18"Check dependencies308003191#308003192#0(0"0(0#1#0"8615088128#0"0#
 
 CCodeSign "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"
-s307920813.154433
-e307920813.332424
+s308003195.717151
+e308003195.984672
 r1
 xCodeSign
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app
-lSLF07#2@47"CodeSign build/Debug-iphoneos/HeavyRotation.app307920813#307920813#0(0"0(0#0#77"/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app8614623808#692"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Christopher Readle (M3JQ8A3348)" "--resource-rules=/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist" --entitlements "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent" "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
+lSLF07#2@47"CodeSign build/Debug-iphoneos/HeavyRotation.app308003195#308003195#0(0"0(0#0#77"/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app8616098816#692"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Christopher Readle (M3JQ8A3348)" "--resource-rules=/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist" --entitlements "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent" "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
 
 CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307920812.448052
-e307920812.514049
+s308003193.676824
+e308003194.141558
 r1
 xCompileC
 xbuild/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o
@@ -202,7 +245,20 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m307920812#307920812#0(0"0(0#0#73"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m8612408448#1921"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-elupqswuyjiaqmdbwztqqfygaieu/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o"0#
+lSLF07#2@81"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m308003193#308003194#0(0"0(0#0#73"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m8633154240#1921"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-elupqswuyjiaqmdbwztqqfygaieu/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotationAppDelegate.o"0#
+
+CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyViewController.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308003193.677737
+e308003194.135505
+r1
+xCompileC
+xbuild/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyViewController.o
+x/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m308003193#308003194#0(0"0(0#0#68"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m8626580768#1911"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-elupqswuyjiaqmdbwztqqfygaieu/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyViewController.o"0#
 
 CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/main.o "/Volumes/USB DISK/source/HeavyRotation/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s307920812.447238
@@ -218,8 +274,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@53"Compile /Volumes/USB DISK/source/HeavyRotation/main.m307920812#307920812#0(0"0(0#0#45"/Volumes/USB DISK/source/HeavyRotation/main.m8612466880#1873"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-elupqswuyjiaqmdbwztqqfygaieu/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/main.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/main.o"0#
 
 CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s307920812.538073
-e307920812.765013
+s308003194.135712
+e308003195.175814
 r1
 xCompileC
 xbuild/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o
@@ -228,7 +284,20 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m307920812#307920812#0(0"0(0#0#73"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m8614373248#1921"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o"0#
+lSLF07#2@81"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m308003194#308003195#0(0"0(0#0#73"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m8633339040#1921"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyRotationAppDelegate.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotationAppDelegate.o"0#
+
+CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyViewController.o "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308003194.911388
+e308003195.175599
+r1
+xCompileC
+xbuild/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyViewController.o
+x/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m308003194#308003195#0(0"0(0#0#68"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m8630369248#1911"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyViewController.o"0#
 
 CCompileC build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/main.o "/Volumes/USB DISK/source/HeavyRotation/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s307920812.495438
@@ -242,6 +311,14 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@53"Compile /Volumes/USB DISK/source/HeavyRotation/main.m307920812#307920812#0(0"0(0#0#45"/Volumes/USB DISK/source/HeavyRotation/main.m8614309440#1873"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-generated-files.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-own-target-headers.hmap" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation-project-headers.hmap" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch -c "/Volumes/USB DISK/source/HeavyRotation/main.m" -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib"
+s308003192.785178
+e308003193.676502
+r1
+xCompileXIB
+x/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib
+lSLF07#2@42"CompileXIB Classes/HeavyViewController.xib308003192#308003193#0(0"0(0#0#70"/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib8633292320#580"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyViewController.nib" "/Volumes/USB DISK/source/HeavyRotation/Classes/HeavyViewController.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk0#
 
 CCompileXIB "/Volumes/USB DISK/source/HeavyRotation/MainWindow.xib"
 s307920811.232148
@@ -260,53 +337,62 @@ xbuild/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist307920810#307920810#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist3418906600707745280#490"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
 
+CCpResource build/Debug-iphoneos/HeavyRotation.app/joeeye.jpg "../Solutions/09. HeavyRotation/joeeye.jpg"
+s308003192.785791
+e308003192.789501
+r1
+xCpResource
+xbuild/Debug-iphoneos/HeavyRotation.app/joeeye.jpg
+x../Solutions/09. HeavyRotation/joeeye.jpg
+lSLF07#2@46"Copy ../Solutions/09. HeavyRotation/joeeye.jpg308003192#308003192#0(0"0(0#0#80"/Volumes/USB DISK/source/HeavyRotation/../Solutions/09. HeavyRotation/joeeye.jpg8618010784#483"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Volumes/USB DISK/source/HeavyRotation/../Solutions/09. HeavyRotation/joeeye.jpg" "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
+
 CCreateUniversalBinary "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation" normal "armv6 armv7"
-s307920812.902522
-e307920812.917794
+s308003195.428026
+e308003195.463257
 r1
 xCreateUniversalBinary
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation
 xnormal
 xarmv6 armv7
-lSLF07#2@95"CreateUniversalBinary build/Debug-iphoneos/HeavyRotation.app/HeavyRotation normal "armv6 armv7"307920812#307920812#0(0"0(0#0#50"/Volumes/USB DISK/source/HeavyRotation/armv6 armv78614531456#574"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation" "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation" -output "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation"0#
+lSLF07#2@95"CreateUniversalBinary build/Debug-iphoneos/HeavyRotation.app/HeavyRotation normal "armv6 armv7"308003195#308003195#0(0"0(0#0#50"/Volumes/USB DISK/source/HeavyRotation/armv6 armv78633818528#574"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation" "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation" -output "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation"0#
 
 CGenerateDSYMFile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM" "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation"
-s307920812.917880
-e307920813.081482
+s308003195.463338
+e308003195.694833
 r1
 xGenerateDSYMFile
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation
-lSLF07#2@113"GenerateDSYMFile build/Debug-iphoneos/HeavyRotation.app.dSYM build/Debug-iphoneos/HeavyRotation.app/HeavyRotation307920812#307920813#0(0"0(0#0#91"/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation8614096128#386"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation" -o "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM"0#
+lSLF07#2@113"GenerateDSYMFile build/Debug-iphoneos/HeavyRotation.app.dSYM build/Debug-iphoneos/HeavyRotation.app/HeavyRotation308003195#308003195#0(0"0(0#0#91"/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation8624500448#386"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/HeavyRotation" -o "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app.dSYM"0#
 
 CLd "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation" normal armv6
-s307920812.514127
-e307920812.762135
+s308003194.141640
+e308003194.911294
 r1
 xLd
 x/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation
 xnormal
 xarmv6
-lSLF07#2@139"Link /Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation307920812#307920812#0(0"0(0#0#0"8613043296#905"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk "-L/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation.LinkFileList" -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation"0#
+lSLF07#2@139"Link /Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation308003194#308003194#0(0"0(0#0#0"8628773632#905"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk "-L/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation.LinkFileList" -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv6/HeavyRotation"0#
 
 CLd "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation" normal armv7
-s307920812.765080
-e307920812.902442
+s308003195.175865
+e308003195.427953
 r1
 xLd
 x/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation
 xnormal
 xarmv7
-lSLF07#2@139"Link /Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation307920812#307920812#0(0"0(0#0#0"8614161216#905"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk "-L/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation.LinkFileList" -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation"0#
+lSLF07#2@139"Link /Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation308003195#308003195#0(0"0(0#0#0"8633440768#905"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk "-L/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation.LinkFileList" -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/Objects-normal/armv7/HeavyRotation"0#
 
 CProcessInfoPlistFile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist" HeavyRotation-Info.plist
-s307920810.431180
-e307920811.232035
+s308003192.561080
+e308003192.785032
 r1
 xProcessInfoPlistFile
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist
 xHeavyRotation-Info.plist
-lSLF07#2@32"Process HeavyRotation-Info.plist307920810#307920811#0(0"0(0#0#63"/Volumes/USB DISK/source/HeavyRotation/HeavyRotation-Info.plist8614555616#594"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility HeavyRotation-Info.plist -genpkginfo "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist" -o "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist"0#
+lSLF07#2@32"Process HeavyRotation-Info.plist308003192#308003192#0(0"0(0#0#63"/Volumes/USB DISK/source/HeavyRotation/HeavyRotation-Info.plist8458434393682504704#594"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility HeavyRotation-Info.plist -genpkginfo "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/ResourceRules.plist" -o "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/Info.plist"0#
 
 CProcessPCH /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/HeavyRotation_Prefix-aeejqwwveelutcbgoibolnbjvjqq/HeavyRotation_Prefix.pch.gch HeavyRotation_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
 s307920811.613891
@@ -344,19 +430,19 @@ x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/e
 lSLF07#2@200"ProcessProductPackaging "/Users/creadle/Library/MobileDevice/Provisioning Profiles/10CA5C4B-F6EB-4179-9F04-7F8E71E7F801.mobileprovision" build/Debug-iphoneos/HeavyRotation.app/embedded.mobileprovision307920813#307920813#0(0"0(0#0#102"/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/embedded.mobileprovision8614505376#435"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/creadle/Library/MobileDevice/Provisioning Profiles/10CA5C4B-F6EB-4179-9F04-7F8E71E7F801.mobileprovision" -o "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app/embedded.mobileprovision"0#
 
 CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent"
-s307920813.088143
-e307920813.154363
+s308003195.697241
+e308003195.717009
 r1
 xProcessProductPackaging
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist
 x/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent
-lSLF07#2@193"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent307920813#307920813#0(0"0(0#0#119"/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent8613474624#454"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist -entitlements -format xml -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent"0#
+lSLF07#2@193"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent308003195#308003195#0(0"0(0#0#119"/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent8634516608#454"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist -entitlements -format xml -o "/Volumes/USB DISK/source/HeavyRotation/build/HeavyRotation.build/Debug-iphoneos/HeavyRotation.build/HeavyRotation.xcent"0#
 
 CTouch "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"
-s307920813.085569
-e307920813.087988
+s308003195.695080
+e308003195.697186
 r1
 xTouch
 x/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app
-lSLF07#2@83"Touch /Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app307920813#307920813#0(0"0(0#0#0"8613665504#274"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
+lSLF07#2@83"Touch /Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app308003195#308003195#0(0"0(0#0#0"8623584192#274"    cd "/Volumes/USB DISK/source/HeavyRotation"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Volumes/USB DISK/source/HeavyRotation/build/Debug-iphoneos/HeavyRotation.app"0#
 
